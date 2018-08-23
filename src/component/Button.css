@@ -1,0 +1,107 @@
+/**
+Css styling takes the styling from the demo.
+ */
+
+.default {
+    display: inline-block;
+    border-radius: 9999px;
+    line-height: 1;
+    padding: 1em 14px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: Raleway, sans-serif;
+    letter-spacing: 0.02em;
+    background: rgb(255, 255, 255);
+    color: rgb(255, 120, 0);
+    box-shadow: rgb(255, 120, 0) 0 0 0 1px inset;
+    margin-right: 10px;
+    outline: none;
+}
+
+.default:hover {
+    color: rgb(74, 144, 226);
+    box-shadow: rgb(74, 144, 226) 0 0 0 1px inset;
+}
+
+.default:active {
+    color: rgb(255,255,255);
+    background: rgb(74, 144, 226);
+    transition: all 0.2s, background 0s, color 0s;
+}
+
+.default:disabled {
+    color: rgb(201, 201, 201); box-shadow: rgb(201, 201, 201) 0 0 0 1px inset;
+}
+
+.primary {
+    display: inline-block; outline: none; border-radius: 9999px; line-height: 1; padding: 1em 14px; font-size: 12px; font-weight: 500; cursor: pointer; transition: all 0.2s ease 0s; font-family: Raleway, sans-serif; letter-spacing: 0.02em; background: rgb(255, 120, 0); color: rgb(255, 255, 255); box-shadow: none; margin-right: 10px;
+}
+
+.primary:hover {
+    background: rgb(255,255,255);
+    color: rgb(255,120,0);
+
+    box-shadow: rgb(255, 120, 0) 0 0 0 1px inset;
+}
+
+.primary:active {
+    background: rgb(255,120,0);
+    color: rgb(255,255,255);
+    transition: all 0.2s, background 0s, color 0s;
+}
+
+.primary:disabled {
+    background: rgb(201, 201, 201);
+    color: rgb(255, 255, 255);
+    box-shadow: none;
+}
+
+.secondary {display: inline-block; outline: none; border-radius: 9999px; line-height: 1; padding: 1em 14px; font-size: 12px; font-weight: 500; cursor: pointer; transition: all 0.2s ease 0s; font-family: Raleway, sans-serif; letter-spacing: 0.02em; background: rgb(249, 249, 249); color: rgb(50, 50, 127); box-shadow: none; margin-right: 10px;}
+
+.secondary:hover {
+    background: rgb(255, 255, 255);
+    color: rgb(74, 144, 226);
+    box-shadow: rgb(74, 144, 226) 0 0 0 1px inset;
+}
+
+.secondary:active {
+    background: none;
+    transition: all 0.2s, background 0s, color 0s;
+}
+
+/**
+Reset the css state.
+ */
+.secondary:disabled {
+    color: rgb(201, 201, 201);
+    box-shadow: none;
+    background: rgb(249, 249, 249)
+}
+
+.flat {
+    display: inline-block; outline: none; border: 0; padding: 6px 14px; font-size: 12px; cursor: pointer; transition: all 0.2s ease 0s; font-family: Raleway, sans-serif; letter-spacing: 0.02em; margin-right: 10px;}
+
+.flat:hover {
+    opacity: 0.6;
+
+}
+
+.flat:active {
+    opacity: 1;
+}
+
+.flat:disabled {
+    color: rgb(201, 201, 201);
+    opacity: 1;
+}
+
+
+
+/**
+Global disable, change the cursor to default.
+ */
+:disabled {
+    cursor: default;
+}
